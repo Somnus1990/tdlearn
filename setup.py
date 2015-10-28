@@ -6,5 +6,6 @@ setup(
     author = "Christoph Dann",
     author_email="cdann@cdann.de",
     version = "git",
-    ext_modules = cythonize('swingup_ode.pyx'),
+    packages = ["tdlearn", "tdlearn.util"],
+    ext_modules = cythonize('tdlearn/swingup_ode.pyx'),
 )
